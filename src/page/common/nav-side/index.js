@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-05 11:10:39
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-05 13:08:56
+* @Last Modified time: 2017-07-06 15:25:23
 */
 
 'use strict';
@@ -15,8 +15,8 @@ var navSide = {
 		name : '',
 		navList : [
 			{name : 'user-center', desc : '个人中心', href : './user-center.html'},
-			{name : 'order-list', desc : '我的订单', href : './oder-list.html'},
-			{name : 'pass-update', desc : '修改密码', href : './pass-update.html'},
+			{name : 'order-list', desc : '我的订单', href : './order-list.html'},
+			{name : 'pass-update', desc : '修改密码', href : './user-pass-update.html'},
 			{name : 'about', desc : '关于mmall', href : './about.html'}
 		]
 	},

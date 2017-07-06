@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-04 14:43:16
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-04 17:14:13
+* @Last Modified time: 2017-07-06 15:05:52
 */
 
 'use strict';
@@ -71,17 +71,19 @@ var _mm = {
 			return !!value;
 		}
 		// 手机号验证
-		if ('iphone' === type) {
+		if ('phone' === type) {
 			return /^1\d{10}$/.test(value);
+			// return /^1[3|4|5|8][0-9]\d{4,8}$ /;
 		}
 		// 验证邮箱
 		if ('email' === type) {
-			return /^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/;
+			// return /^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/.test(value);
+            return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
 		}
 	},
 	// 统一登录处理
 	doLogin : function(){
-		window.location.href = './login.html?redirect='+ encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect='+ encodeURIComponent(window.location.href);
 	},
 	goHome : function(){
 		window.location.href = './index.html';

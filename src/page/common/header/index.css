@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-05 10:10:54
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-05 10:44:39
+* @Last Modified time: 2017-07-06 11:24:36
 */
 .header .logo{
 	position: absolute;
@@ -12,6 +12,7 @@
 	font-size: 36px;
 	color: #c60023;
 	font-weight: bold;
+	text-decoration: none;
 }
 .header .search-con{
 	padding: 40px 0 30px 250px;
@@ -29,4 +30,14 @@
 	position: absolute;
 	height: 44px;
 	width: 80px;
+}
+/*面包屑导航*/
+.crumb{
+	margin-bottom: 15px;
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	border-top: 2px solid #c60023;
 }

@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-04 17:14:50
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-04 21:20:12
+* @Last Modified time: 2017-07-06 11:37:02
 */
 /* css reset */
 *{
@@ -34,6 +34,24 @@ input[type='checkbox']{
 	margin: 0 auto;
 	position: relative;
 	/*超出边界隐藏，同时可以清除浮动*/
+	overflow: hidden;
+}
+
+/*panel*/
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
 	overflow: hidden;
 }
 

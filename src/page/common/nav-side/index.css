@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-05 11:10:29
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-05 13:09:30
+* @Last Modified time: 2017-07-06 11:33:07
 */
 .nav-side{
 	float: left;
@@ -13,6 +13,7 @@
 .nav-side .nav-item{
 	line-height: 25px;
 	font-size: 13px;
+	font-weight: bold;
 
 }
 .nav-side .nav-item .link{

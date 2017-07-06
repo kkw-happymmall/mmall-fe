@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-04 22:06:16
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-05 09:38:29
+* @Last Modified time: 2017-07-05 22:43:25
 */
 
 'use strict';
@@ -25,7 +25,7 @@ var nav = {
 		});
 		// 注册点击事件
 		$('.js-register').click(function(){
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		// 退出点击事件
 		$('.js-logout').click(function(){
@@ -39,7 +39,7 @@ var nav = {
 	// 加载用户信息
 	loadUserInfo : function(){
 		_user.checkLogin(function(res){
-			$('.user.not-login').hide().sibling('.user.login').show().find('.username').text(res.username);
+			$('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username);
 		},function(errMsg){
 			// do nothing
 		});	
