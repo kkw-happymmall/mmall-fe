@@ -2,7 +2,7 @@
 * @Author: Wendy Shu
 * @Date:   2017-07-05 10:10:31
 * @Last Modified by:   Wendy Shu
-* @Last Modified time: 2017-07-05 10:53:20
+* @Last Modified time: 2017-07-06 22:16:44
 */
 
 'use strict';
@@ -11,9 +11,10 @@ require('./index.css');
 var _mm = require('util/mm.js');
 var header = {
 	init : function(){
+		this.onLoad();
 		this.bindEvent();
 	},
-	onload : function(){
+	onLoad : function(){
 		var keyword = _mm.getUrlParam('keyword');
 		if (keyword) {
 			$('#search-input').val(keyword);
